@@ -1,0 +1,224 @@
+<html lang="en"></html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 user-scalable=no"
+    />
+    <script
+      src="https://kit.fontawesome.com/092b142fb0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- stylesheets -->
+    <link href="../css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.datatables.net/2.1.6/css/dataTables.bootstrap5.css"
+    />
+
+    <title>The Data Dictionary Project - Data Snaps</title>
+    <meta charset="utf-8" />
+    <meta property="og:title" content="The Data Dictionary Project" />
+    <meta
+      property="og:description"
+      content="Data-powered visual stories from the Philippines"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:image"
+      content="https://pmagtulis.github.io/ph-heat/assets/share-card.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@prinzmagtulis" />
+
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="https://pmagtulis.github.io/data_dictionary"> Data Dictionary </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="https://pmagtulis.github.io/data_dictionary"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">Snaps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">The Dictionary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <h4>Snaps</h4>
+      </div>
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/parliamentary.png"
+            style="max-width: 100%"
+            alt="A title page cover that reads 'Philippine heat' against a heatmap background"
+          />
+          <h3>The end of parliamentary courtesy?</h3>
+          <br />
+          <strong>27 Aug. 2024</strong>
+          <p>This week's graphic, we look closer at the so-called "parliamentary
+          courtesy" extended by Congress to presidents and vice-presidents
+          during budget deliberations.</p>
+
+          <p>Congress extends this courtesy by forgoing lengthy deliberations on the budget proposals of the Office of the President and Vice President. Media typically report these deliberations to last merely minutes. This year however, legislators appeared to have
+            ditched this courtesy on the case of Vice President Sara Duterte.</p>
+            
+            <p>On Aug. 27, the House appropriations committee questioned Duterte during her office's budget deliberations, which lasted for over five hours.
+          </p>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/carina.png"
+            style="max-width: 100%"
+            alt="A title page cover that reads 'Philippine heat' against a heatmap background"
+            class="align-left"
+          />
+          <h3>Carina dumps more rain</h3>
+          <br />
+          <strong>27 July 2024</strong>
+          <p>Supertyphoon 'Carina' dumped over half a month worth of rain in Metro Manila, according to data from local weather forecasters.</p>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/quiboloy.jpeg"
+            style="max-width: 100%"
+            alt="A title page cover that reads 'Philippine heat' against a heatmap background"
+            class="align-left"
+          />
+          <h3>Where is Pastor Apollo Quiboloy?</h3>
+          <br />
+          <strong>26 Aug. 2024</strong>
+          <p>Supertyphoon 'Carina' dumped over half a month worth of rain in Metro Manila, according to data from local weather forecasters.</p>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/olympics.png"
+            style="max-width: 100%"
+            alt="A title page cover that reads 'Philippine heat' against a heatmap background"
+            class="align-left"
+          />
+          <h3>Philippines in the 2024 Olympics</h3>
+          <br />
+          <strong>4 Aug. 2024</strong>
+          <p>Supertyphoon 'Carina' dumped over half a month worth of rain in Metro Manila, according to data from local weather forecasters.</p>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/lotto_static.png"
+            style="max-width: 100%"
+            alt="A title page cover that reads 'Philippine heat' against a heatmap background"
+            class="align-left"
+          />
+          <h3>How many Filipinos won the lotto?</h3>
+          <br />
+          <strong>31 Jan. 2024</strong>
+          <p>Supertyphoon 'Carina' dumped over half a month worth of rain in Metro Manila, according to data from local weather forecasters.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/marcos_debt.png"
+            style="max-width: 100%"
+            alt="A title page cover that reads 'Philippine heat' against a heatmap background"
+            class="align-left"
+          />
+          <h3>Marcos generates debt faster than Duterte</h3>
+          <br />
+          <strong>Jan. 2024</strong>
+          <p>Supertyphoon 'Carina' dumped over half a month worth of rain in Metro Manila, according to data from local weather forecasters.</p>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/marcos_sona.png"
+            style="max-width: 100%"
+            alt="A title page cover that reads 'Philippine heat' against a heatmap background"
+            class="align-left"
+          />
+          <h3>Marcos SONA 2023</h3>
+          <br />
+          <strong>July 2023</strong>
+          <p>Supertyphoon 'Carina' dumped over half a month worth of rain in Metro Manila, according to data from local weather forecasters.</p>
+        </div>
+      </div>
+      </div>
+
+      <br>
+      <br>
+
+    </body>
+
+    <footer class="footer expand-xl bg-dark text-center text-white">
+      <!-- Copyright -->
+      <div class="container-fluid text-center p-2">
+        © 2024 Copyright: The Data Dictionary Project
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </html>

@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Uniwars W00 Regular";
+  src: url("https://db.onlinewebfonts.com/t/22eec90baaf9b2bb4097b075900767f2.eot");
+  src: url("https://db.onlinewebfonts.com/t/22eec90baaf9b2bb4097b075900767f2.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/22eec90baaf9b2bb4097b075900767f2.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/22eec90baaf9b2bb4097b075900767f2.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/22eec90baaf9b2bb4097b075900767f2.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/22eec90baaf9b2bb4097b075900767f2.svg#Uniwars W00 Regular")format("svg");
+}
+
+@font-face {
+  font-family: "Uniwars W00 Bold";
+  src: url("https://db.onlinewebfonts.com/t/52e6f64521534723ebb3543d7ad89e00.eot");
+  src: url("https://db.onlinewebfonts.com/t/52e6f64521534723ebb3543d7ad89e00.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/52e6f64521534723ebb3543d7ad89e00.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/52e6f64521534723ebb3543d7ad89e00.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/52e6f64521534723ebb3543d7ad89e00.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/52e6f64521534723ebb3543d7ad89e00.svg#Uniwars W00 Bold")format("svg");
+}
+
+html,
+body {
+  font: 'Roboto';
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+
+.navbar-brand {
+  font-family: "Uniwars W00 Bold";
+  text-align: center !important;
+  justify-content: center;
+  position: relative;
+  margin-bottom: auto;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.nav-item {
+  font-family: "Uniwars W00 Regular";
+  font-size: 16px;
+}
+
+.nav-link active {
+  opacity: 0.8;
+}
+
+.dt-paging {
+  display: none;
+}
+
+h4 {
+  font-family: "Uniwars W00 Bold";
+  font-size: 18px;
+  color: #707070;
+  margin-left:0px;
+}
+
+h3 {
+  color:#707070;
+}
+
+.caption {
+  font-size: 11px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+div.scrollmenu {
+  background-color: #ffffff;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding-right: 15px;
+  text-decoration: none;
+  
+}
+
+.nav-link.active {
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+  text-underline-offset: 5px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+  text-underline-offset: 5px;
+}
+
+.photo > img {
+  width: 550px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+
+
+.scrollmenu .image {
+  align-items: center;
+  width: 400px;
+  position: relative;
+}
+
+.image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 48, 46, 0.95);
+  color: #ffffff;
+  display: flex;
+  font-family: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.image_overlay:hover {
+  opacity: 1;
+}
+
+.image_overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image_overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image_title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  font-size: 14px;
+  margin-top: 0.25em;
+  text-align: center;
+}
+
+.dt-length {
+  display:none;
+}
+
+.dt-layout-row{
+  border-style: none;
+}
+
+#data_section_info {
+  display: none;
+}
+
+
+.dt-search {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dt-search label {
+  font-family: "Uniwars W00 Regular";
+  font-size: 22px;
+}
+
+.dt-input input {
+  width: 27rem;
+  border: none;
+  border-bottom: 0.1rem solid #999;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  border-radius: 5px solid;
+}
+
+.dt-input {
+  width: 25rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}

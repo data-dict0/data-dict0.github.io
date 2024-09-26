@@ -1,2 +1,2 @@
-# data-dict
-Homepage of the Data Dictionary Project
+# data_dictionary
+Official website of the Data Dictionary project
