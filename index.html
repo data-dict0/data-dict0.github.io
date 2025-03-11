@@ -10,16 +10,14 @@
     ></script>
 
     <!-- stylesheets -->
-    <link href="css/style.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link
-      href="https://cdn.datatables.net/2.1.6/css/dataTables.bootstrap5.css"
-    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet" />
 
     <title>The Data Dictionary Project</title>
     <meta charset="utf-8" />
@@ -41,10 +39,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg bg-dark">
+    <nav class="navbar sticky-top navbar-expand-sm" style="background-color: #ffffff">
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="https://data-dict0.github.io">
-          Data Dictionary
+          <img
+            src="../assets/logo.jpg"
+            alt="Logo"
+            width="300"
+            height="40"
+            class="d-inline-block align-text-top"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -61,19 +65,14 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a
-                class="nav-link active text-white"
+                class="nav-link active"
                 aria-current="page"
                 href="https://data-dict0.github.io"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">The Dictionary</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white"
-                href="https://data-dict0.github.io/about"
+              <a class="nav-link" href="https://data-dict0.github.io/about"
                 >About</a
               >
             </li>
@@ -83,337 +82,22 @@
     </nav>
 
     <div class="container">
-      <div class="row form-group">
-        <h4>Stories >>></h4>
-
-        <div class="scrollmenu">
-          <a
-          href="https://data-dict0.github.io/ph-condos"
-          target="_blank"
-        >
-          <div class="image">
-            <img
-              src="./assets/condos.png"
-              style="max-width: 100%"
-              alt="A graphic showing a yellow waffle chart with the number 74,000 printed over it."
-            />
-            <div class="image_overlay">
-              <div class="image_title">
-                <p>74,000: the Philippines faces a condo supply glut</p>
-              </div>
-              <p class="description">Feb. 17, 2025</p>
-            </div>
-          </div>
-        </a>
-
-
-          <a
-            href="https://data-dict0.github.io/poll2025-registered"
-            target="_blank"
-          >
-            <div class="image">
-              <img
-                src="./assets/poll-2025.png"
-                style="max-width: 100%"
-                alt="Graphic showing two bar charts in green and purple."
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>Where voter numbers went up (or down)</p>
-                </div>
-                <p class="description">Feb. 3, 2025</p>
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="https://data-dict0.github.io/ph-electioninfo-hub"
-            target="_blank"
-          >
-            <div class="image">
-              <img
-                src="./assets/election-hub.png"
-                style="max-width: 100%"
-                alt="Graphic showing a text that reads Phlilippine election information hub."
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>Dashboard: Philippine election information hub</p>
-                </div>
-                <p class="description">Jan. 2025</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://data-dict0.github.io/philhealth" target="_blank">
-            <div class="image">
-              <img
-                src="./assets/philhealth.png"
-                style="max-width: 100%"
-                alt="Graphic showing a treemap of revenue sources of PhilHealth for 2024 with that from the national government subsidy highlighted"
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>What's up with PhilHealth?</p>
-                </div>
-                <p class="description">Dec. 30, 2024</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://data-dict0.github.io/ph-impeachment" target="_blank">
-            <div class="image">
-              <img
-                src="./assets/impeachment.png"
-                style="max-width: 100%"
-                alt="Graphic showing the photos of Philippine politicians who were impeached namely former Chief Justice Renato Corona, former President Joseph Estrada, former Ombudsman Merceditas Gutierrez and former elections chair Andres Bautista."
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>The Philippines' experience with impeachment</p>
-                </div>
-                <p class="description">Dec. 9, 2024</p>
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="https://data-dict0.github.io/ph-elections-candidates"
-            target="_blank"
-          >
-            <div class="image">
-              <img
-                src="./assets/candidates.png"
-                style="max-width: 100%"
-                alt="A title page cover that reads 'Philippine heat' against a heatmap background"
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>Smaller and smaller election field in the Philippines</p>
-                </div>
-                <p class="description">Nov. 9, 2024</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://data-dict0.github.io/mapping-storms" target="_blank">
-            <div class="image">
-              <img
-                src="./assets/2024-storms.png"
-                style="max-width: 100%"
-                alt="A title page cover that reads 'Philippine heat' against a heatmap background"
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>Mapping recent Philippine storms</p>
-                </div>
-                <p class="description">Oct. 28, 2024</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://data-dict0.github.io/ph-storms" target="_blank">
-            <div class="image">
-              <img
-                src="./assets/storms.png"
-                style="max-width: 100%"
-                alt="A title page cover that reads 'Fewer but stronger'."
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>Fewer but stronger typhoons visit the Philippines</p>
-                </div>
-                <p class="description">Oct. 24, 2024</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://data-dict0.github.io/reserves" target="_blank">
-            <div class="image">
-              <img
-                src="./assets/reserves.png"
-                style="max-width: 100%"
-                alt="A title page cover that reads 'Gold, bills and so much more'."
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>What's in the Philippines' foreign reserves</p>
-                </div>
-                <p class="description">Sep. 26 2024</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://pmagtulis.github.io/ph-heat" target="_blank">
-            <div class="image">
-              <img
-                src="./assets/heat-share-card.png"
-                style="max-width: 100%"
-                alt="A title page cover that reads 'Philippine heat' against a heatmap background"
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>It's more hot in the Philippines</p>
-                </div>
-                <p class="description">May 7, 2024</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://pmagtulis.github.io/lotto-ph/" target="_blank">
-            <div class="image">
-              <img
-                src="./assets/lotto.png"
-                style="max-width: 100%"
-                alt="A title page cover that reads 'Winning the Philippine lotto.'"
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>
-                    Filipinos are winning the lotto, a game of chance. Here's
-                    how many they are.
-                  </p>
-                </div>
-                <p class="description">Feb. 5, 2024</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://pmagtulis.github.io/makati-taguig/" target="_blank">
-            <div class="image">
-              <img
-                src="./assets/makati-taguig.png"
-                style="max-width: 100%"
-                alt="A title page cover that reads 'What Makati lost and Taguig gained' over a map of the two localities in Metro Manila in the Philippines."
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>The villages Makati lost to Taguig</p>
-                </div>
-                <p class="description">Feb. 1, 2024</p>
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="https://pmagtulis.github.io/sc-decisions-analysis/"
-            target="_blank"
-          >
-            <div class="image">
-              <img
-                src="./assets/sc-analysis-cover.png"
-                style="max-width: 100%"
-                alt="Title page cover that has the headshots of the current 15 Supreme Court justices of the Philippines and a title page that reads Visualizing Supreme Court decisions."
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>Supreme Court decisions, visualized</p>
-                </div>
-                <p class="description">Jan. 9, 2024</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://pmagtulis.github.io/ph-debt/" target="_blank">
-            <div class="image">
-              <img
-                src="./assets/ph-debt-cover.png"
-                style="max-width: 100%"
-                alt="Cover page of Understanding Philippine government debt"
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>Understanding Philippine government debt</p>
-                </div>
-                <p class="description">Oct. 15, 2023</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://pmagtulis.github.io/sona-story/" target="_blank">
-            <div class="image">
-              <img
-                src="./assets/cover-for-sona.png"
-                style="max-width: 100%"
-                alt="Title page cover that reads Dissecting the SONA."
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>Dissecting the Philippine president's SONA</p>
-                </div>
-                <p class="description">June 30, 2023</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://pmagtulis.github.io/covid-ph-map/" target="_blank">
-            <div class="image">
-              <img
-                src="../assets/map.gif"
-                style="max-width: 100%"
-                alt="A cropped map of the Philippines showing parts of the island of Luzon."
-              />
-              <div class="image_overlay">
-                <div class="image_title">
-                  <p>Map: Covid-19 in the Philippines</p>
-                </div>
-                <p class="description">June 11, 2022</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="row">
-        <h4>Snaps</h4>
-      </div>
+      <div class="row"></div>
 
       <div class="row">
         <div class="photo">
-          <img
-            src="./assets/sara-impeachment.png"
-            style="max-width: 100%"
-            alt="A circle packing chart showing the most mentioned words on the impeachment complaint filed by the Philippine House of Representatives to Vice President Sara Duterte."
-          />
+          <img src="./assets/house-age.png" style="max-width: 100%" alt="" />
           <h3>
-            Philippine lawmakers impeach Vice President Duterte. Here are the
-            words mentioned the most on their complaint.
+            <a href="https://www.data-dict.com/ph-house-age/" target="_blank">
+              Does age matter in Philippine elections?</a
+            >
           </h3>
           <br />
-          <strong>6 Feb. 2025</strong>
+          <em>March 10, 2025</em>
           <p>
-            Philippine Vice President Sara Duterte was impeached by the House of
-            Representatives on Feb. 5 and now faces the risk of being removed
-            from office.
-          </p>
-
-          <p>
-            The 32-page
-            <a
-              href="https://www.rappler.com/philippines/read-impeachment-complaint-against-sara-duterte-2025/"
-              target="_blank"
-              >complaint</a
-            >
-            with seven Articles of Impeachment, was signed by 205 House members.
-            A Data Dictionary analysis of the complaint found that it commonly
-            mentioned words such as "public (82 times)", "funds (60)",
-            "confidential (48)", "graft (17)" and "corruption (16)".
-          </p>
-
-          <p>
-            Among others, lawmakers are alleging Duterte of betrayal of public
-            trust, culpable violation of the constitution and graft. The
-            complaint cited allegedly misused confidential funds, which was part
-            of her budget at the Office of the Vice President, and the Education
-            department.
-          </p>
-          <p>
-            Duterte now goes to an impeachment trial at the Senate. Senate
-            President Francis "Chiz" Escudero, however, said the trial will not
-            begin until June when congress returns from a legislative break in
-            time for the 2025 midterm elections.
+            Over half of the candidates for Philippines' House of
+            Representatives are over 55 years old, the median age. Analysts say
+            it's a reflection of the grip political dynasties have in politics.
           </p>
         </div>
       </div>
@@ -422,35 +106,18 @@
 
       <div class="row">
         <div class="photo">
-          <img
-            src="./assets/teenage_pregnancy.png"
-            style="max-width: 100%"
-            alt="A line chart with data from the World Bank showing the annual fertility rate of adolescent aged 15-19 years old in the Philippines compared with East Asia and the Pacific and global averages."
-          />
+          <img src="./assets/condos.png" style="max-width: 100%" alt="" />
           <h3>
-            Philippines debates measure meant to lower elevated teenage
-            pregnancy
+            <a href="https://www.data-dict.com/ph-condos/" target="_blank">
+              Visualizing Metro Manila's condominium supply glut</a
+            >
           </h3>
           <br />
-          <strong>23 Jan. 2025</strong>
+          <em>Feb. 17, 2025</em>
           <p>
-            Senators are to debate on a bill that aims to address the
-            Philippines's elevated teenage pregnancy rate.
-          </p>
-
-          <p>
-            After the passage of Reproductive Health law in 2012, teenage
-            pregnancy rate had consistently dropped, but the decline had slowed
-            since 2017 and the rate had stayed flat. The adolescent fertility
-            rate, a measure of child beaing among 15-19 years old, peaked in
-            2010. From 2012 to 2016, the rate dropped from 57.2 births per 1,000
-            women to 50 births per 1,000 women.
-          </p>
-
-          <p>
-            That said, the same World Bank data show that the Philippines
-            continues to have the highest pregnancy rate among teenagers in East
-            Asia and the Pacific as of 2022.
+            After decades of em demand and supporting economic growth, the
+            Philippine property sector is now experiencing a supply glut of
+            condominiums, specifically in the capital region, Metro Manila.
           </p>
         </div>
       </div>
@@ -459,110 +126,19 @@
 
       <div class="row">
         <div class="photo">
-          <img
-            src="./assets/taal.png"
-            style="max-width: 100%"
-            alt="A map showing the different danger zones imposed around the Taal Volcano during its eruption in Jan. 2020."
-          />
-          <h3>Flashback: Taal eruption in 2020</h3>
-          <br />
-          <strong>14 Oct. 2024</strong>
-          <p>
-            For this week's graphic, we plot the different danger zones
-            instituted on January 2020 when the Taal Volcano in Batangas erupted
-            for the first time in over a century.
-          </p>
-
-          <p>
-            The volcano has again shown some restlenessness over the past couple
-            of weeks, although the government has kept it under Alert Level 1,
-            which indicates that an eruption is not being anticipated soon.
-          </p>
-
-          <p>
-            In 2020, Philippine volcanologists ordered the evacuation of
-            residents along 7 kilometers, 14 km and 17 km radius of the Taal
-            Volcano, which sits on a lake. The volcano is the Philippines' most
-            active and is located around three hours south of Manila, the
-            capital. The volcano also sits just beside Tagaytay City, a typical
-            summer destination.
-          </p>
-          <p>
-            The danger zones in 2020 are no longer in place these days, although
-            the Philippine Institute of Volcanology and Seismology (Phivolcs)
-            has designated the entire island where Taal sits as a permanent
-            danger zone.
-          </p>
-        </div>
-      </div>
-
-      <br /><br />
-
-      <div class="row">
-        <div class="photo">
-          <img
-            src="./assets/gensan.jpeg"
-            style="max-width: 100%"
-            alt="Two maps showing the change in the number and composition of legislative districts in South Cotabato in the Philippines in 2018 and 2025."
-          />
-          <h3>GenSan gets a new district representative, expands House</h3>
-          <br />
-          <strong>13 Oct. 2024</strong>
-          <p>
-            General Santos City in South Cotabato is getting its own district
-            representative in Congress next year.
-          </p>
-
-          <p>
-            Originally, General Santos represented the third legislative
-            district of South Cotabato province in Mindanao. But under Republic
-            Act 11804, GenSan becomes its own congressional district, while
-            legislators redrew the rest of the map to keep the number of
-            districts in South Cotabato to three.
-          </p>
-
-          <p>
-            This means South Cotabato will continue to have three congressional
-            seats at the House of Representatives, while lawmakers created a new
-            seat for General Santos in the next Congress.
-          </p>
-        </div>
-      </div>
-
-      <br /><br />
-
-      <div class="row">
-        <div class="photo">
-          <img
-            src="../assets/sports.png"
-            style="max-width: 100%"
-            alt="A treemap showing data on the number of national athletes in the Philippines."
-          />
-          <h3>Filipino athletes</h3>
-          <br />
-          <strong>2 Oct. 2024</strong>
-          <p>
-            For this week's graphic, let's talk about sports. There are 1,373
-            national athletes competing for the Philippines in 64 sports as of
-            August 2024, data from the Philippine Sports Commission showed.
-          </p>
-
-          <p>
-            National athletes are granted monthly allowances by the government
-            depending on their classification. Allowances from P10,000 to
-            P45,000 per athlete, according to this
+          <img src="./assets/poll-2025.png" style="max-width: 100%" alt="" />
+          <h3>
             <a
-              href="https://www.spin.ph/multisport/philippine-sports-commission-psc-athletes-medalists-monthly-allowances-a795-20190403"
+              href="https://www.data-dict.com/poll2025-registered/"
               target="_blank"
-              >report by SPIN.ph.</a
+              >Where voter numbers went up (or down)</a
             >
-          </p>
-
+          </h3>
+          <br />
+          <em>Feb. 5, 2025</em>
           <p>
-            Breaking down the data, the Philippines has 54 national athletes in
-            ice hockey, the most in any sport event. Its followed by 49 athletes
-            in taekwondo, 48 in athletics, and 44 in baseball, which is a team
-            sport.
+            Laws and a Supreme Court decision altered geographical boundaries
+            and consequently, the number of voters.
           </p>
         </div>
       </div>
@@ -571,159 +147,80 @@
 
       <div class="row">
         <div class="photo">
-          <img
-            src="../assets/parliamentary.png"
-            style="max-width: 100%"
-            alt="A bar chart with data showing the length of the House appropriations committee hearing of the Office of the Vice President's budget every year."
-          />
-          <h3>The end of parliamentary courtesy?</h3>
-          <br />
-          <strong>27 Aug. 2024</strong>
-          <p>
-            This week's graphic, we look closer at the so-called "parliamentary
-            courtesy" extended by Congress to presidents and vice-presidents
-            during budget deliberations.
-          </p>
-
-          <p>
-            Congress extends this courtesy by forgoing lengthy deliberations on
-            the budget proposals of the Office of the President and Vice
-            President. Media typically report these deliberations to last merely
-            minutes. This year however, legislators appeared to have ditched
-            this courtesy on the case of Vice President Sara Duterte.
-          </p>
-
-          <p>
-            On Aug. 27, the House appropriations committee questioned Duterte
-            during her office's budget deliberations, which lasted for over five
-            hours.
-          </p>
-        </div>
-      </div>
-
-      <br />
-      <br />
-
-      <div class="row">
-        <div class="photo">
-          <img
-            src="../assets/carina.png"
-            style="max-width: 100%"
-            alt="A bar chart showing the amount of rainfall in Science Garden in Quezon City in July 2023 and in a single day when typhoon Carina hit Metro Manila in July 2024."
-            class="align-left"
-          />
-          <h3>Carina dumps more rain</h3>
-          <br />
-          <strong>27 July 2024</strong>
-          <p>
-            Supertyphoon 'Carina' dumped over half a month worth of rain in
-            Metro Manila, according to data from local weather forecasters.
-          </p>
-        </div>
-      </div>
-
-      <br />
-      <br />
-
-      <div class="row">
-        <div class="photo">
-          <img
-            src="../assets/quiboloy.jpeg"
-            style="max-width: 100%"
-            alt="A map of the Kingdom of Jesus Christ Church in Davao City."
-            class="align-left"
-          />
-          <h3>Where is Pastor Apollo Quiboloy?</h3>
-          <br />
-          <strong>26 Aug. 2024</strong>
-          <p>
-            The police have been searching the compound of the Kingdom of Jesus
-            Christ Church in Davao City for days. They were looking for Pastor
-            Apollo Quiboloy, the Church's leader, who is wanted by the U.S.
-            Federal Bureau of Investigation over sexual abuse of minors charges.
-          </p>
-
-          <p>
-            This map shows the approximate location of a standoff between the
-            police and Church's members.
-          </p>
-        </div>
-      </div>
-
-      <br />
-      <br />
-
-      <div class="row">
-        <div class="photo">
-          <img
-            src="../assets/olympics.png"
-            style="max-width: 100%"
-            alt="A bar chart with data showing the medal haul of the Philippines in the Olympics from 1924 to 2024."
-            class="align-left"
-          />
-          <h3>Philippines in the 2024 Olympics</h3>
-          <br />
-          <strong>4 Aug. 2024</strong>
-          <p>
-            Government data show the Philippines is having its best performance
-            in the Olympics so far in 2024. The country is assured of winning
-            four medals, led by two golds from Carlos Yulo in the men's
-            gymnastics category. Two other medals, at least bronzes, are
-            guaranteed for Nesthy Petecio and Aira Villegas in women's boxing.
-          </p>
-        </div>
-      </div>
-
-      <br />
-      <br />
-
-      <div class="row">
-        <div class="photo">
-          <img
-            src="../assets/lotto_static.png"
-            style="max-width: 100%"
-            alt="A bar chart showing the number of jackpot winners and cumulative jackpot winnings every year in the main lotto games in the Philippines from 2013 to 2023."
-            class="align-left"
-          />
-          <h3>How many Filipinos have won the lotto?</h3>
-          <br />
-          <strong>31 Jan. 2024</strong>
-          <p>
-            Suddenly, news of Filipinos winning the lotto is aplenty. We looked
-            at the data from the Philippine Charity Sweepstakes Office (PCSO),
-            and found that last year was easily a 10-year high for winners and
-            amount of lotto winnings. More in our
-            <a href="https://pmagtulis.github.io/lotto-ph" target="_blank"
-              >data story.</a
+          <img src="./assets/election-hub.png" style="max-width: 100%" alt="" />
+          <h3>
+            <a
+              href="https://www.data-dict.com/ph-electioninfo-hub/"
+              target="_blank"
             >
-          </p>
-        </div>
-      </div>
-      <br />
-
-      <div class="row">
-        <div class="photo">
-          <img
-            src="../assets/marcos_debt.png"
-            style="max-width: 100%"
-            alt="A line chart showing the change in national government debt of the Philippines since the start of each presidency from Joseph Estradda to Ferdinand Marcos Jr. during their first 18 months in office."
-            class="align-left"
-          />
-          <h3>Marcos generates debt faster than Duterte</h3>
-          <br />
-          <strong>Jan. 2024</strong>
-          <p>
-            During his first 18 months in office, Philippine President Ferdinand
-            Marcos Jr. has overseen an increase in national government debt
-            faster than his previous two predecessors, Rodrigo Duterte and
-            Benigno Aquino III, during similar times of their terms. The surge
-            past these two presidents may still be temporary - under Duterte,
-            for instance, government debt more than doubled after his
-            administration went on a
-            <a href="https://pmagtulis.github.io/ph-debt" target="_blank"
-              >borrowing spree</a
+              Dashboard: Philippine election information hub</a
             >
-            from 2020 to fund a Covid-19 response.
+          </h3>
+          <br />
+          <em>Jan. 2025</em>
+          <p>Data, maps and charts on Philippine elections</p>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <div class="row">
+        <div class="photo">
+          <img src="../assets/philhealth.png" style="max-width: 100%" alt="" />
+          <h3>
+            <a href="https://www.data-dict.com/philhealth/" target="_blank"
+              >What's up with PhilHealth?</a
+            >
+          </h3>
+          <br />
+          <em>Dec. 30, 2024</em>
+          <p>
+            The Philippines' health insurer is set to get zero subsidy from the
+            national government in 2025.
+          </p>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <div class="row">
+        <div class="photo">
+          <img src="../assets/impeachment.png" style="max-width: 100%" alt="" />
+          <h3>
+            <a href="https://www.data-dict.com/ph-impeachment/" target="_blank">
+              The Philippines' experience with impeachment</a
+            >
+          </h3>
+          <br />
+          <em>Dec. 9, 2024</em>
+          <p>Visualizing the Philippine impeachment process.</p>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/candidates.png"
+            style="max-width: 100%"
+            alt=""
+            class="align-left"
+          />
+          <h3>
+            <a
+              href="https://www.data-dict.com/ph-elections-candidates/"
+              target="_blank"
+            >
+              Smaller and smaller election field
+            </a>
+          </h3>
+          <br />
+          <em>Nov. 9, 2024</em>
+          <p>
+            Candidates for public office in the 2025 elections hit their lowest
+            since at least 1998.
           </p>
         </div>
       </div>
@@ -734,91 +231,216 @@
       <div class="row">
         <div class="photo">
           <img
-            src="../assets/marcos_sona.png"
+            src="../assets/2024-storms.png"
             style="max-width: 100%"
-            alt="A bar chart with data showing the word count of each State of the Nation Address by the Philippine president since 1930s."
+            alt=""
             class="align-left"
           />
-          <h3>Marcos SONA 2023</h3>
+          <h3>
+            <a href="https://www.data-dict.com/mapping-storms/" target="_blank">
+              Mapping recent Philippine storms
+            </a>
+          </h3>
           <br />
-          <strong>July 2023</strong>
+          <em>Oct. 28, 2024</em>
           <p>
-            Our analysis showed that the latest State of the Nation Address
-            (SONA) of Philippine President Ferdinand Marcos Jr. contained 8,227
-            words, which was higher than last year.
+            A quicktake on the storms and typhoons that hit the Philippines over
+            recent years.
           </p>
+        </div>
+      </div>
 
+      <br />
+      <br />
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/storms.png"
+            style="max-width: 100%"
+            alt=""
+            class="align-left"
+          />
+          <h3>
+            <a href="https://www.data-dict.com/ph-storms/" target="_blank">
+              Fewer but stronger typhoons visit the Philippines
+            </a>
+          </h3>
+          <br />
+          <em>Oct. 24, 2024</em>
           <p>
-            For a deeper dive on the SONA and how we conducted our analysis,
-            please see our earlier piece on
-            <a href="https://www.prinzmagtulis.com/sona-story/" target="_blank"
-              >Dissecting the SONA</a
-            >.
+            The Philippines, a country used to typhoons, is now being battered
+            by emer ones.
+          </p>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/reserves.png"
+            style="max-width: 100%"
+            alt=""
+            class="align-left"
+          />
+          <h3>
+            <a href="https://www.data-dict.com/reserves/" target="_blank">
+              What's in Philippines' foreign reserves?
+            </a>
+          </h3>
+          <br />
+          <em>Sep. 26, 2024</em>
+          <p>
+            The Bangko Sentral ng Pilipinas sold the most amount of gold among
+            global central banks in the first half. Understanding what reserves
+            are is key not to worry.
+          </p>
+        </div>
+      </div>
+      <br /><br />
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/heat-share-card.png"
+            style="max-width: 100%"
+            alt=""
+            class="align-left"
+          />
+          <h3>
+            <a href="https://www.prinzmagtulis.com/ph-heat/" target="_blank">
+              It's more hot in the Philippines
+            </a>
+          </h3>
+          <br />
+          <em>May 7, 2024</em>
+          <p>
+            This year's extreme heat has tested the tropical country's endurance
+            to warm weather.
+          </p>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/lotto.png"
+            style="max-width: 100%"
+            alt=""
+            class="align-left"
+          />
+          <h3>
+            <a href="https://www.prinzmagtulis.com/lotto-ph/" target="_blank">
+              Filipinos are winning the lotto, a game of chance</a
+            >
+          </h3>
+          <br />
+          <em>Feb. 5, 2024</em>
+          <p>Here's how many they are (so far).</p>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/makati-taguig.png"
+            style="max-width: 100%"
+            alt=""
+            class="align-left"
+          />
+          <h3>
+            <a
+              href="https://www.prinzmagtulis.com/makati-taguig/"
+              target="_blank"
+            >
+              The villages Makati lost to Taguig</a
+            >
+          </h3>
+          <br />
+          <em>Feb. 1, 2024</em>
+          <p>
+            The Supreme Court settled a decades-long dispute between two Metro
+            Manila cities. Ten barangays and thousands of people were affected.
+          </p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/sc-analysis-cover.png"
+            style="max-width: 100%"
+            alt=""
+            class="align-left"
+          />
+          <h3>
+            <a href="https://www.prinzmagtulis.com/sc-decisions-analysis/" target="_blank">
+              Supreme Court decisions, visualized</a
+            >
+          </h3>
+          <br />
+          <em>Jan. 9, 2024</em>
+          <p>Examining the Philippine Supreme Court signed decisions.</p>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/ph-debt-cover.png"
+            style="max-width: 100%"
+            alt=""
+            class="align-left"
+          />
+          <h3>
+            <a href="https://www.prinzmagtulis.com/ph-debt/" target="_blank">
+              Understanding the Philippine government debt</a
+            >
+          </h3>
+          <br />
+          <em>Oct. 15, 2023</em>
+          <p>An explainer on the Philippine national government debt.</p>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <div class="row">
+        <div class="photo">
+          <img
+            src="../assets/cover-for-sona.png"
+            style="max-width: 100%"
+            alt=""
+            class="align-left"
+          />
+          <h3>
+            <a href="https://www.prinzmagtulis.com/sona-story/" target="_blank">
+              Dissecting the Philippine SONA</a
+            >
+          </h3>
+          <br />
+          <em>June 30, 2023</em>
+          <p>
+            Why Philippine presidents say what they say in the State of the
+            Nation Address.
           </p>
         </div>
       </div>
     </div>
-
-    <!-- <div class="row form-group">
-        <h4>The Dictionary</h4>
-
-        <table id="data_section" class="table" style="width: 100%">
-          <thead>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <button type="button" class="btn btn-outline-secondary btn-lg">
-                  Gross domestic product
-                </button>
-              </td>
-              <td>
-                <button type="button" class="btn btn-outline-secondary btn-lg">
-                  Prices
-                </button>
-              </td>
-              <td>
-                <button type="button" class="btn btn-outline-secondary btn-lg">
-                  Employment
-                </button>
-              </td>
-              <td>
-                <button type="button" class="btn btn-outline-secondary btn-lg">
-                  Twin balances
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <button type="button" class="btn btn-outline-secondary btn-lg">
-                  Government revenues
-                </button>
-              </td>
-              <td>
-                <button type="button" class="btn btn-outline-secondary btn-lg">
-                  Government spending
-                </button>
-              </td>
-              <td>
-                <button type="button" class="btn btn-outline-secondary btn-lg">
-                  Debt
-                </button>
-              </td>
-              <td>
-                <button type="button" class="btn btn-outline-secondary btn-lg">
-                  Tourism
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div> -->
 
     <br />
 
