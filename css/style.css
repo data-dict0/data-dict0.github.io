@@ -4,10 +4,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-.container {
-  margin-top: 50px;
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -118,4 +114,15 @@ a:hover {
   font-size: 1rem;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 450px) {
+  .navbar-brand, img {
+    width: 300px;
+  }
+
+  button.navbar-toggler {
+    width: 50px;
+    float: inline-end;
+  }
 }
